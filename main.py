@@ -17,5 +17,5 @@ if __name__ == '__main__':
 #aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 #AAAAAAAAAAA
     #jhjeikghfneruhgbieruhjgi
-    #Hello ma slaves
+    #Hello ma slav
 #12313
