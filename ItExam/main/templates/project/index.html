@@ -4,69 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polytech School</title>
-    <link rel="stylesheet" href="style.css">
-    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'project/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'project/img/favicon.ico.png' %}" type="image/png">
 </head>
 <body>
     <!-- для регулирования отступов сбоку -->
     <header class="container">
-        <link rel="shortcut icon" href="favicon.ico.png" type="image/png">
-        <img class = "icon" src="icsv.svg" alt= "">
+        <img class="icon" src="{% static 'project/img/icsv.svg' %}" alt="">
 
         <ul>
             <li class="ic1">POLYTECH</li>
             <li class="ic2">SCHOOL</li>
         </ul>
-        <!-- <h2 class = "word1">POLYTECH</h2>
-        <h2 class = "word2">SCHOOL</h2> -->
-        <!-- <span class="logo">POLYTECH SCHOOL</span> -->
         <nav class="top">
             <ul>
-                <li><a href = "#">Как всё устроено</a></li>
-                <li><a href = "#">О нас</a></li>
-                <li><a href = "#">Отзывы</a></li>
-                <li class = "btn"><a href = "#">Вход</a></li>
+                <li><a href="#part1">Как всё устроено</a></li>
+                <li><a href="#part2">О нас</a></li>
+                <li><a href="#part3">Отзывы</a></li>
+                <li class="btn"><a href="entrance">Вход</a></li>
             </ul>
         </nav>
-
-        
     </header>
     <hr class="line">
     <div class="hero container">
         <div class="hero--info">
             <div class="word">
-                <h1 class = 'font1'>Подготовка к ЕГЭ по </h1>
-                <h1 class = 'font2'>информатике </h1>
+                <h1 class='font1'>Подготовка к ЕГЭ по</h1>
+                <h1 class='font2'>информатике</h1>
             </div>
             <ul>
-                <div class = w1 >
-                    <img class = "star" src="Group 167.svg">
+                <div class="w1">
+                    <img class="star" src="{% static 'project/img/Group 167.svg' %}">
                     <li class="arr">Актуальные материалы с разбором заданий из прошлых лет</li>
-                    <img class = "star" src="Group 167.svg">
+                    <img class="star" src="{% static 'project/img/Group 167.svg' %}">
                     <li class="arr">Большая база тренировочных заданий с решениями</li>
-                    <img class = "star" src="Group 167.svg">
+                    <img class="star" src="{% static 'project/img/Group 167.svg' %}">
                     <li class="arr">Удобные интерактивные тесты для самопроверки</li>
-                    <img class = "star" src="Group 167.svg">
+                    <img class="star" src="{% static 'project/img/Group 167.svg' %}">
                     <li class="arr">Качественная подготовка</li>
                 </div>
             </ul>
         </div>
-        <img class = "robot" src="img/image 19.svg" alt="">
+        <img class="robot" src="{% static 'project/img/image 19.svg' %}" alt="">
         <div class="qad">
             <div class="text">
-                <p class = "t1">Определи уровень текущих знаний</p>
-                <div class = "black">
-    
-                </div>
-                <p class = "t2">Реши пробник бесплатно и узнай свои реальные баллы!</p>
-                <!-- <p class = "btn1"><a href = "#">Решить пробник</p> -->
-                <button class = "btn2" type="button">Решить пробник</button>
+                <p class="t1">Определи уровень текущих знаний</p>
+                <div class="black"></div>
+                <p class="t2">Реши пробник бесплатно и узнай свои реальные баллы!</p>
+                <button class="btn2" type="button">Решить пробник</button>
             </div>
         </div>
-        <div class="blu">
-        </div>
+        <div class="blu"></div>
         <div class="panel">
-            <p class = "zag">Для кого предназначен наш курс</p>
+            <p class="zag">Для кого предназначен наш курс</p>
             <div class="p1"></div>
             <div class="p2"></div>
             <div class="p3"></div>
@@ -76,106 +67,113 @@
         </div>
         <nav class="top1">
             <ul>
-                <li class=" word1">Учишься в школе и планируешь сдавать ЕГЭ</li>
-                <img class = "img1" src="img1.svg" alt="">
-                <li class=" word2">Хочешь найти новых коллег с общими интересами</li>
-                <img class = "img2" src="img2.svg" alt="">
-                <li class=" word3">Хочешь поступить в топовый вуз страны</li>
-                <img class = "img3" src="img3.svg" alt="">
-                <li class=" word4">Нужен помощник в обучении и  решении сложных задач </li>
-                <img class = "img4" src="img4.svg" alt="">
-                <li class=" word5">Научиться программировать и отработать навыки   алгоритмизации </li>
-                <img class = "img5" src="img5.svg" alt="">
-                <li class=" word6">Нужен гибкий график, который легко совмещать со школой</li>
-                <img class = "img6" src="img66.svg" alt="">
+                <li class="word1">Учишься в школе и планируешь сдавать ЕГЭ</li>
+                <img class="img1" src="{% static 'project/img/img1.svg' %}" alt="">
+                <li class="word2">Хочешь найти новых коллег с общими интересами</li>
+                <img class="img2" src="{% static 'project/img/img2.svg' %}" alt="">
+                <li class="word3">Хочешь поступить в топовый вуз страны</li>
+                <img class="img3" src="{% static 'project/img/img3.svg' %}" alt="">
+                <li class="word4">Нужен помощник в обучении и решении сложных задач</li>
+                <img class="img4" src="{% static 'project/img/img4.svg' %}" alt="">
+                <li class="word5">Научиться программировать и отработать навыки алгоритмизации</li>
+                <img class="img5" src="{% static 'project/img/img5.svg' %}" alt="">
+                <li class="word6">Нужен гибкий график, который легко совмещать со школой</li>
+                <img class="img6" src="{% static 'project/img/img66.svg' %}" alt="">
             </ul>
         </nav>
         <div class="kurs">
             <h2>Курс</h2>
-
             <h3>Политехник</h3>
             <ul>
-                <div class = w2 >
-                    <img class = "star2" src="star2.svg">
+                <div class="w2">
+                    <img class="star2" src="{% static 'project/img/star2.svg' %}">
                     <li class="arr">Все темы экзамена в интенсивном формате</li>
-                    <img class = "star2" src="star2.svg">
-                    <li class="arr">Разбор заданий на языке программирования Python </li>
-                    <img class = "star2" src="star2.svg">
+                    <img class="star2" src="{% static 'project/img/star2.svg' %}">
+                    <li class="arr">Разбор заданий на языке программирования Python</li>
+                    <img class="star2" src="{% static 'project/img/star2.svg' %}">
                     <li class="arr">Задания подобранные из проверенных сборников</li>
-                    <img class = "star2" src="star2.svg">
-                    <li class="arr">Решение всех разновидностей каждого задания  </li>
-                    <img class = "star2" src="star2.svg">
+                    <img class="star2" src="{% static 'project/img/star2.svg' %}">
+                    <li class="arr">Решение всех разновидностей каждого задания</li>
+                    <img class="star2" src="{% static 'project/img/star2.svg' %}">
                     <li class="arr">Система отслеживания прогресса</li>
-                    <img class = "star2" src="star2.svg">
-                    <li class="arr">Видеообзор заданий </li>
-                    <img class="ava" src="ava.svg" alt="">
+                    <img class="star2" src="{% static 'project/img/star2.svg' %}">
+                    <li class="arr">Видеообзор заданий</li>
+                    <img class="ava" src="{% static 'project/img/ava.svg' %}" alt="">
                 </div>
             </ul>
         </div>
         <div class="invite">
             <div class="text">
                 <p>Записывайся прямо сейчас и готовься к ЕГЭ по информатике с лучшими! Вместе мы обязательно добьемся результата</p>
-                <img src="r1.png" alt="">
-                <button class = "btn3" type="button">Записаться на курс</button>
+                <img src="{% static 'project/img/r1.png' %}" alt="">
+                <button class="btn3" type="button">Записаться на курс</button>
             </div>
         </div>
-        <div class="bl">
-        </div>
+        <div class="bl"></div>
         <div class="tab">
-            <h2>Как всё устроено</h2>
-            <p>Образовательная платформа </p>
-            <div class="photo">
-            </div>
-            <img src="photo1.svg" alt="">
-            
+            <h2 id="part1">Как всё устроено</h2>
+            <p>Образовательная платформа</p>
+            <div class="photo"></div>
+            <img src="{% static 'project/img/photo1.svg' %}" alt="">
         </div>
         <div class="obr">
             <ul>
-                <div class = w3 >
+                <div class="w3">
                     <li class="arr">Занимайся с любого устройства в удобное время</li>
-                    <img class = "star3" src="star3.svg">
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
                     <li class="arr">Отслеживай свой прогресс</li>
-                    <img class = "star3" src="star3.svg">
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
                     <li class="arr">Получай углубленные знания для каждого задания</li>
-                    <img class = "star3" src="star3.svg">
-                    <li class="arr">Задавай любые вопросы куратору </li>
-                    <img class = "star3" src="star3.svg">
-                    <li class="arr">Используй наш банк задания для отрабатывания 
-                        навыков</li>
-                    <img class = "star3" src="star3.svg">
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
+                    <li class="arr">Задавай любые вопросы куратору</li>
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
+                    <li class="arr">Используй наш банк задания для отрабатывания навыков</li>
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
                 </div>
             </ul>
         </div>
         <div class="teor">
-
             <p>Теория и практика</p>
-            <ul class = "ind">
-                <div class = w4 >
+            <ul class="ind">
+                <div class="w4">
                     <li class="arr">Собрали опыт лучших экспертов по подготовке к ЕГЭ</li>
                     <class class="one"><p></p></class>
-                    <img class = "star3" src="star3.svg">
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
                     <li class="arr1">Можно тренироваться на заданиях одного номера</li>
-                    <img class = "star3" src="star3.svg">
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
                     <li class="arr">Задания разбиты по уровню сложности</li>
-                    <img class = "star3" src="star3.svg">
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
                     <li class="arr2">Несколько вариантов решений для каждого задания</li>
-                    <img class = "star3" src="star3.svg">
+                    <img class="star3" src="{% static 'project/img/star3.svg' %}">
                 </div>
             </ul>
         </div>
         <div class="obshee">
-            <div class="af1"><p class="f1">А. Рогов</p></div>
-            <div class="af2"><p class="f2">КЕГЭ</p></div>
-            <div class="af3"><p class="f3">Е. Джобс</p></div>
-            <div class="af4"><p class="f4">А. Кабанов</p></div>
-            <div class="af5"><p class="f5">Яндекс учебник</p></div>
-            <div class="af6"><p class="f6">PRO100 ЕГЭ</p></div>
+            <div class="line2"></div>
+            <div class="foto2"></div>
+            <img src="{% static 'project/img/photo2.svg' %}" alt="">
+            <div class="inf">
+                <p>Общие сведения</p>
+                <ul>
+                    <div class="w5">
+                        <li class="arr">Небольшие группы для лучшего усвоения материала</li>
+                        <img class="star3" src="{% static 'project/img/star3.svg' %}">
+                        <li class="arr">Регулярные тесты для проверки знаний</li>
+                        <img class="star3" src="{% static 'project/img/star3.svg' %}">
+                        <li class="arr">Гибкий график занятий</li>
+                        <img class="star3" src="{% static 'project/img/star3.svg' %}">
+                        <li class="arr">Доступ к материалам курса 24/7</li>
+                        <img class="star3" src="{% static 'project/img/star3.svg' %}">
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="creatures">
-            <h2>Создатели</h2>
-        </div>
+        <footer>
+            <div class="container">
+                <p>© Polytech School, 2024</p>
+                <p>Все права защищены</p>
+            </div>
+        </footer>
     </div>
-    
-    
 </body>
 </html>
