@@ -3,5 +3,5 @@ from django.contrib import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls')) # При переходе на главную страницу, запускаем main/urls
+    path('', include('main.urls')), # При переходе на главную страницу, запускаем main/urls
 ]
