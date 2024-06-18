@@ -250,23 +250,6 @@ header{
     padding: 0px;
 }
 
-.btn3 {
-  position: relative;
-  height: 100px;
-  width: 350px;
-  background-color: #0399E9;
-  color: white;
-  font-family: "Inter";
-  font-size: 22px;
-  font-weight: 700;
-  border-radius: 10px;
-  bottom: 300px;
-  left: 390px;
-  border: none;
-  text-decoration: none; /* добавьте это свойство */
-  padding: 20px; /* добавьте это свойство */
-  cursor: pointer; /* добавьте это свойство */
-}
 
 
 .line {
@@ -555,18 +538,22 @@ header{
   width: 220px;
 }
 
-.btn2{
+.btn3 {
   position: relative;
-  height: 50px;
-  width: 270px;
-  background-color: #000;
-  color:white;
+  height: 100px;
+  width: 350px;
+  background-color: #0399E9;
+  color: white;
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
-  border-radius: 15px;
-  bottom:115px;
-  left:900px;
+  border-radius: 10px;
+  bottom: 300px;
+  left: 390px;
+  border: none;
+  text-decoration: none; /* добавьте это свойство */
+  padding: 20px; /* добавьте это свойство */
+  cursor: pointer; /* добавьте это свойство */
 }
 /* оформление курса */
 
@@ -633,20 +620,9 @@ header{
   height: 340px;
 }
 
-.btn3{
-  position: relative;
-  height: 100px;
-  width: 350px;
-  background-color: #0399E9;
-  color: white;
-  font-family: "Inter";
-  font-size: 22px;
-  font-weight: 700;
-  border-radius: 10px;
-  bottom:330px;
-  left:350px;
-  border:none;
-}
+
+
+
 
 .bl{
   position: relative;
@@ -849,16 +825,337 @@ header{
 .creatures h2{
   position: relative;
   bottom: 4500px;
+  left: 80px;
   text-align:center;
   font-family: "Inter";
   font-size: 48px;
 }
 
+/* Для оформления создатели */
+.creatures p{
+  text-align: center;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 200;
+}
+.creators{
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 300;
+}
+.fon1{
+  position: relative;
+  background: #71E1FA;
+  height: 250px;
+  width:  300px;
+  bottom: 5330px;
+  left: 70px;
+  border-radius: 40px;
+}
+.fon2{
+  position: relative;
+  background: #8BB5F3;
+  height: 250px;
+  width:  300px;
+  bottom: 5580px;
+  left: 450px;
+  border-radius: 40px;
+}
+.fon3{
+  position: relative;
+  background: #90D7FF;
+  height: 250px;
+  width:  300px;
+  bottom: 5830px;
+  left: 830px;
+  border-radius: 40px;
+}
+.fon4{
+  position: relative;
+  background: #C6B1FF;
+  height: 250px;
+  width:  300px;
+  bottom: 6080px;
+  left: 1200px;
+  border-radius: 40px;
+}
+.text1{
+  position: relative;
+  bottom: 4270px;
+  left: 67px;
+  width: 300px;
+  height: 200px;
+  background-color: #F0F0F0;
+  border-radius: 25px;
+}
+.text2{
+  position: relative;
+  bottom: 4470px;
+  left: 450px;
+  width: 300px;
+  height: 200px;
+  background-color: #F0F0F0;
+  border-radius: 25px;
+}
+.text3{
+  position: relative;
+  bottom: 4670px;
+  left: 830px;
+  width: 300px;
+  height: 200px;
+  background-color: #F0F0F0;
+  border-radius: 25px;
+}
+.text4{
+  position: relative;
+  bottom: 4870px;
+  left: 1200px;
+  width: 300px;
+  height: 200px;
+  background-color: #F0F0F0;
+  border-radius: 25px;
+}
 
+.egor{
+  position: relative;
+  bottom: 6296px;
+  left: 85px;
+  height: 200px;
+}
+.serg{
+  position: relative;
+  bottom: 6486px;
+  left: 450px;
+  height: 190px;
+  border-radius: 20px;
+}
 
+.igor{
+  position: relative;
+  bottom: 6696px;
+  left: 840px;
+  height: 210px;
+}
 
+.sanya{
+  position: relative;
+  bottom: 6895px;
+  left: 1230px;
+  height: 200px;
+}
 
+.img7{
+  position: relative;
+  bottom: 6650px;
+  left: 200px;
+  border-radius: 25px;
+}
+.text3 img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.text4 img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
 
+.text2 img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
 
+.text1 img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
 
+/* ОТЗЫВЫ */
 
+.reviews{
+  z-index: 1;
+  left:200px;
+  max-width: 1900px;
+  margin: 0  auto;
+  font-family: "Inter";
+}
+
+.stars{
+  z-index: 2;
+  position: relative;
+  top: 4195px;
+  left: 430px;
+  width: 70px;
+}
+.reviews h3{
+  font-size: 32px;
+  position: relative;
+  top:4320px;
+  font-weight: 300;
+  left: 900px;
+}
+.reviews p{
+  z-index: 2;
+  position: relative;
+  top:4255px;
+  font-weight: 300;
+  left: 350px;
+}
+.gray{
+  position: relative;
+  top: 4130px;
+  left: 300px;
+  background-color: #EDEDED;
+  width: 1400px;
+  height: 400px;
+}
+
+.white{
+  position: relative;
+  top: 3800px;
+  left: 400px;
+  background-color: white;
+  border-radius: 15px;
+  width: 1100px;
+  height: 200px;
+}
+
+.gray2 {
+  z-index: 3;
+  border-radius: 20px;
+  position: relative;
+  top: 3670px;
+  left: 1510px;
+  background-color: #EDEDED;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue{
+  border-radius: 20px;
+  position: relative;
+  top: 3610px;
+  left: 1500px;
+  background-color: #3373EF;
+  width: 200px;
+  height: 70px;
+}
+
+.rev{
+  position: relative;
+  top: 3700px;
+  width: 50px;
+  left: 440px;
+
+}
+
+.names {
+  position: relative;
+  bottom: 608px;
+  text-align: center;
+  left: 145px;
+  width: 30px;
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+.company{
+  position: relative;
+  bottom: 600px;
+  font-family: "Inter";
+  font-size: 14px;
+  left: 90px;
+}
+.adres{
+  position: relative;
+  bottom: 600px;
+  font-family: "Inter";
+  font-size: 14px;
+  left:90px;
+}
+
+h4{
+  position: relative;
+  top: 3535px;
+  left: 850px;
+  font-weight: 500;
+  font-family: "Inter";
+  font-size: 14px;
+}
+
+.navigation{
+  font-weight: 300;
+  font-size: 14px;
+  position: relative;
+  top: 3515px;
+  left: 810px;
+  
+}
+
+.connect{
+  font-family: "Inter";
+  font-size: 14px;
+  position: relative;
+  font-weight: 700;
+}
+
+h5{
+  position: relative;
+  top: 3387px;
+  left: 1263px;
+  font-weight: 500;
+  font-family: "Inter";
+  font-size: 14px;
+}
+
+.navigation2{
+  color: #244A77;
+  font-weight: 300;
+  font-size: 14px;
+  position: relative;
+  top: 3365px;
+  left: 1250px;
+}
+
+.letter{
+  position:relative;
+  width: 24px;
+  top: 3335px;
+  left: 1265px;
+}
+
+.vk{
+  position:relative;
+  width: 24px;
+  top: 3338px;
+  left: 1265px;
+}
+
+.tg{
+  position:relative;
+  width: 24px;
+  top: 3314px;
+  left: 1295px;
+}
+/* чтобы сайт не двигался вправо */
+body, html {
+  overflow-x: hidden;
+}
+body, html{
+  max-width: 100%;
+}
