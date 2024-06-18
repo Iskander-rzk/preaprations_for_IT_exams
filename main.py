@@ -1,21 +1,42 @@
-# This is a sample Python script.
+import sqlite3
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+dbUsers = sqlite3.connect("users.db")
+c = dbUsers.cursor()
 
+def add_user(name, email, password):
+    c.execute("SELECT rowid, * FROM User WHERE UserName = (?) and UserPassword = (?)", (name, password))
+    items = c.fetchall()
+    if not items:
+        c.execute("INSERT INTO User VALUES ((?), (?), (?) ) ", (name, email, password))
+        return True
+    else:
+        return False # "Это имя пользователя уже используется."
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def check_user(name, email, password):
+    c.execute("SELECT rowid, * FROM User WHERE UserName = (?) and UserPassword = (?)", (name, password))
+    items = c.fetchall()
+    if items:
+        return True
+    else:
+        return False # "Неверный логин или пароль."
 
+c.execute("""CREATE TABLE User (
+UserName text,
+UserEmail text,
+UserPassword
+)""")
+c.execute("INSERT INTO User VALUES ('Alex', 'sobaka@mail.com', 'qwerty' ) ")
+c.execute("SELECT * FROM User")
+print(c.fetchall())
+name = 'Alex'
+email = '12@csd'
+password = 'qwerty'
+c.execute("SELECT rowid, * FROM User WHERE UserName = (?) and UserPassword = (?)", (name, password))
+items = c.fetchall()
+if not items:
+   c.execute("INSERT INTO User VALUES ((?), (?), (?) ) ", (name, email, password))
+dbUsers.commit()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+c.execute()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-#aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-#AAAAAAAAAAA
-    #jhjeikghfneruhgbieruhjgi
-    #Hello ma slav
-#12313
+dbUsers.close()
