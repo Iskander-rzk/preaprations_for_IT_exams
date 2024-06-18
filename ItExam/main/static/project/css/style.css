@@ -250,6 +250,23 @@ header{
     padding: 0px;
 }
 
+.btn3 {
+  position: relative;
+  height: 100px;
+  width: 350px;
+  background-color: #0399E9;
+  color: white;
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 10px;
+  bottom: 300px;
+  left: 390px;
+  border: none;
+  text-decoration: none; /* добавьте это свойство */
+  padding: 20px; /* добавьте это свойство */
+  cursor: pointer; /* добавьте это свойство */
+}
 
 
 .line {
