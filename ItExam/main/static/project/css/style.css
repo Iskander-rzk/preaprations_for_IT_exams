@@ -825,7 +825,7 @@ header{
 .creatures h2{
   position: relative;
   bottom: 4500px;
-  left: 80px;
+  left: 50px;
   text-align:center;
   font-family: "Inter";
   font-size: 48px;
@@ -850,7 +850,6 @@ header{
   height: 250px;
   width:  300px;
   bottom: 5330px;
-  left: 70px;
   border-radius: 40px;
 }
 .fon2{
@@ -859,7 +858,7 @@ header{
   height: 250px;
   width:  300px;
   bottom: 5580px;
-  left: 450px;
+  left: 380px;
   border-radius: 40px;
 }
 .fon3{
@@ -868,7 +867,7 @@ header{
   height: 250px;
   width:  300px;
   bottom: 5830px;
-  left: 830px;
+  left: 760px;
   border-radius: 40px;
 }
 .fon4{
@@ -877,13 +876,12 @@ header{
   height: 250px;
   width:  300px;
   bottom: 6080px;
-  left: 1200px;
+  left: 1130px;
   border-radius: 40px;
 }
 .text1{
   position: relative;
   bottom: 4270px;
-  left: 67px;
   width: 300px;
   height: 200px;
   background-color: #F0F0F0;
@@ -892,7 +890,7 @@ header{
 .text2{
   position: relative;
   bottom: 4470px;
-  left: 450px;
+  left: 380px;
   width: 300px;
   height: 200px;
   background-color: #F0F0F0;
@@ -901,7 +899,7 @@ header{
 .text3{
   position: relative;
   bottom: 4670px;
-  left: 830px;
+  left: 760px;
   width: 300px;
   height: 200px;
   background-color: #F0F0F0;
@@ -910,7 +908,7 @@ header{
 .text4{
   position: relative;
   bottom: 4870px;
-  left: 1200px;
+  left: 1130px;
   width: 300px;
   height: 200px;
   background-color: #F0F0F0;
@@ -920,13 +918,13 @@ header{
 .egor{
   position: relative;
   bottom: 6296px;
-  left: 85px;
   height: 200px;
+  left:15px;
 }
 .serg{
   position: relative;
   bottom: 6486px;
-  left: 450px;
+  left: 380px;
   height: 190px;
   border-radius: 20px;
 }
@@ -934,21 +932,21 @@ header{
 .igor{
   position: relative;
   bottom: 6696px;
-  left: 840px;
+  left: 780px;
   height: 210px;
 }
 
 .sanya{
   position: relative;
   bottom: 6895px;
-  left: 1230px;
+  left: 1170px;
   height: 200px;
 }
 
 .img7{
   position: relative;
   bottom: 6650px;
-  left: 200px;
+  left: 140px;
   border-radius: 25px;
 }
 .text3 img {
@@ -983,174 +981,195 @@ header{
 }
 
 /* ОТЗЫВЫ */
-
-.reviews{
-  z-index: 1;
-  left:200px;
-  max-width: 1900px;
-  margin: 0  auto;
+.gray{
+  width: 1400px;
+  height: 340px;
+  text-align: center;
+  background-color:#EDEDED;
+  position: relative;
+  left: 0px;
+  bottom: 6625px;
   font-family: "Inter";
+  font-size: 32px;
+  font-weight: 200;
+  z-index: 1;
 }
 
-.stars{
+.white {
+  position: relative;
+  bottom: 6850px;
   z-index: 2;
-  position: relative;
-  top: 4195px;
-  left: 430px;
-  width: 70px;
+
+  width: 100px; /* измените на желаемый размер */
+  height: 10px; /* измените на желаемый размер */
+  left: 100px;
+  padding: 10px; /* добавьте отступы для улучшения визуального дизайна */
+  border: 1px solid #ccc; /* добавьте рамку для улучшения визуального дизайна */
+  border-radius: 5px; /* добавьте закругление рамки для улучшения визуального дизайна */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* добавьте тень для улучшения визуального дизайна */
 }
-.reviews h3{
-  font-size: 32px;
+.white input[type="text"] {
   position: relative;
-  top:4320px;
-  font-weight: 300;
-  left: 900px;
+  right: 30px;
+
+  bottom: 70px;
+  width: 1000px; /* измените на желаемый размер */
+  height: 140px; /* измените на желаемый размер */
+  padding: 10px; /* добавьте отступы для улучшения визуального дизайна */
+  border: 1px solid #ccc; /* добавьте рамку для улучшения визуального дизайна */
+  border-radius: 10px; /* добавьте закругление рамки для улучшения визуального дизайна */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* добавьте тень для улучшения визуального дизайна */
+}
+.stars{
+  width: 80px;
+  position: relative;
+  left: 200px;
+  bottom: 6985px;
+  z-index: 3;
 }
 .reviews p{
-  z-index: 2;
   position: relative;
-  top:4255px;
-  font-weight: 300;
-  left: 350px;
+  bottom: 7025px;
+  left: 90px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 200;
+  z-index: 4;
 }
-.gray{
-  position: relative;
-  top: 4130px;
-  left: 300px;
-  background-color: #EDEDED;
-  width: 1400px;
-  height: 400px;
-}
-
-.white{
-  position: relative;
-  top: 3800px;
-  left: 400px;
-  background-color: white;
-  border-radius: 15px;
-  width: 1100px;
-  height: 200px;
-}
-
-.gray2 {
-  z-index: 3;
-  border-radius: 20px;
-  position: relative;
-  top: 3670px;
-  left: 1510px;
+.gray2{
+  text-align: center;
   background-color: #EDEDED;
   width: 180px;
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;
+  position: relative;
+  bottom: 7003px;
+  left: 1130px;
+  z-index: 5;
 }
-
 .blue{
-  border-radius: 20px;
-  position: relative;
-  top: 3610px;
-  left: 1500px;
   background-color: #3373EF;
+  z-index: 4;
+  position: relative;
   width: 200px;
-  height: 70px;
+  height: 80px;
+  left: 1120px;
+  border-radius: 30px;
+  bottom: 7073px;
 }
 
-.rev{
+.ishitr{
+  width: 60px;
+  left: 160px;
   position: relative;
-  top: 3700px;
-  width: 50px;
-  left: 440px;
+  bottom: 7020px;
+  z-index: 5;
 
 }
 
 .names {
+  z-index: 6;
   position: relative;
-  bottom: 608px;
+  bottom: 55px;
   text-align: center;
-  left: 145px;
+  left: 140px;
   width: 30px;
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 28px;
 }
-
+.names p{
+  z-index: 6;
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 500;
+}
 .company{
   position: relative;
-  bottom: 600px;
+  bottom: 50px;
+}
+.company p{
   font-family: "Inter";
-  font-size: 14px;
-  left: 90px;
+  font-size: 12px;
+  font-weight: 400;
+  left: 157px;
 }
 .adres{
   position: relative;
-  bottom: 600px;
-  font-family: "Inter";
-  font-size: 14px;
-  left:90px;
+  bottom: 50px;
+  left:67px;
 }
-
+.adres p{
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+}
 h4{
+  z-index: 5;
   position: relative;
-  top: 3535px;
-  left: 850px;
+  bottom: 7200px;
+  left: 600px;
   font-weight: 500;
   font-family: "Inter";
   font-size: 14px;
 }
-
 .navigation{
+  position: relative;
+  left: 560px;
+  z-index: 5;
+  bottom: 7220px;
+}
+.navigation li{
+  font-family: "Inter";
+  font-size: 12px;
   font-weight: 300;
-  font-size: 14px;
-  position: relative;
-  top: 3515px;
-  left: 810px;
-  
 }
-
-.connect{
-  font-family: "Inter";
-  font-size: 14px;
-  position: relative;
-  font-weight: 700;
-}
-
-h5{
-  position: relative;
-  top: 3387px;
-  left: 1263px;
-  font-weight: 500;
-  font-family: "Inter";
-  font-size: 14px;
-}
-
 .navigation2{
   color: #244A77;
+  bottom: 7360px;
+  z-index: 5;
   font-weight: 300;
   font-size: 14px;
   position: relative;
-  top: 3365px;
-  left: 1250px;
+  left: 885px;
 }
-
+.navigation2 li{
+  z-index: 5;
+  font-weight: 300;
+  font-size: 14px;
+}
+h5{
+  position: relative;
+  font-weight: 500;
+  bottom: 7335px;
+  left: 900px;
+  z-index: 5;
+  font-family: "Inter";
+  font-size: 14px;
+}
 .letter{
   position:relative;
-  width: 24px;
-  top: 3335px;
-  left: 1265px;
+  width: 20px;
+  bottom: 7390px;
+  left:902px;
+  z-index: 5;
 }
-
 .vk{
   position:relative;
   width: 24px;
-  top: 3338px;
-  left: 1265px;
+  z-index: 5;
+  bottom: 7385px;
+  left: 900px;
 }
 
 .tg{
   position:relative;
   width: 24px;
-  top: 3314px;
-  left: 1295px;
+  z-index: 5;
+  bottom: 7409px;
+  left: 930px;
 }
 /* чтобы сайт не двигался вправо */
 body{
