@@ -1,9 +1,19 @@
+from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
 
-class User1(models.Model):
-    username = models.CharField(max_length=100, unique=True)
+class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
-    password = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.username
+    groups = models.ManyToManyField(
+        Group,
+        related_name='customuser_set',  # Укажите уникальное related_name
+        blank=True,
+        help_text='The groups this user belongs to.',
+        related_query_name='customuser',
+    )
+    user_permissions = models.ManyToManyField(
+        Permission,
+        related_name='customuser_set',  # Укажите уникальное related_name
+        blank=True,
+        help_text='Specific permissions for this user.',
+        related_query_name='customuser',
+    )
