@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация на сайте</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS файла -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Подключение CSS файла -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -75,15 +76,20 @@
 
     <div class="register-container">
         <h2>Регистрация</h2>
-        <form action="/register" method="POST">
-            <input type="text" name="username" placeholder="Имя пользователя" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Пароль" required>
-            <input type="password" name="confirm_password" placeholder="Подтверждение пароля" required>
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
             <button type="submit">Зарегистрироваться</button>
         </form>
         <div class="link">
-            <a href="/login">Уже зарегистрированы? Войти</a>
+            <a href="{% url 'login' %}">Вход</a>
         </div>
     </div>
 
